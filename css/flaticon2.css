@@ -1,0 +1,32 @@
+@font-face {
+    font-family: "flaticon";
+    src: url("../fonts/flaticon/font2/flaticon.ttf?12a8c632f7c1f5e8e8d3ceaced990eb8") format("truetype"),
+            url("../fonts/flaticon/font2/flaticon.woff?12a8c632f7c1f5e8e8d3ceaced990eb8") format("woff"),
+            url("../fonts/flaticon/font2/flaticon.woff2?12a8c632f7c1f5e8e8d3ceaced990eb8") format("woff2"),
+            url("../fonts/flaticon/font2/flaticon.eot?12a8c632f7c1f5e8e8d3ceaced990eb8#iefix") format("embedded-opentype"),
+            url("../fonts/flaticon/font2/flaticon.svg?12a8c632f7c1f5e8e8d3ceaced990eb8#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-illustrator:before {
+    content: "\f101";
+}
+.flaticon-premier:before {
+    content: "\f102";
+}
+.flaticon-experience:before {
+    content: "\f103";
+}
+.flaticon-photoshop:before {
+    content: "\f104";
+}
