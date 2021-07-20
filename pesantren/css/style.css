@@ -16,6 +16,23 @@ a {
   text-decoration: none !important;
 }
 
+.btn-gold {
+  padding: 8px 20px;
+  margin-left: 30px;
+  border-radius: 50px;
+  color: #000;
+  font-size: 14px;
+  background-color: #FFD700;
+  border: 2px solid #FFD700;
+  font-weight: 600;
+  transition: 0.5s;
+}
+
+.btn-gold:hover{
+  background: #dfbd00;
+  color: #000;
+}
+
 .ftco-section {
   padding: 7em 0;
   position: relative; }
@@ -39,7 +56,7 @@ a {
 }
 
 #header.header-scrolled, #header.header-inner-pages {
-  background: rgba(40, 58, 90, 0.9);
+  background: rgba(23, 176, 100, 0.9);
 }
 
 #header .logo {
@@ -103,7 +120,7 @@ a {
 }
 
 .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
-  color: #47b2e4;
+  color: #FFD700;
 }
 
 .navbar .getstarted {
@@ -112,13 +129,13 @@ a {
   border-radius: 50px;
   color: #fff;
   font-size: 14px;
-  border: 2px solid #47b2e4;
+  border: 2px solid #FFD700;
   font-weight: 600;
 }
 
 .navbar .getstarted:hover {
-  color: #fff;
-  background: #31a9e1;
+  color: #000;
+  background: #FFD700;
 }
 
 .navbar .dropdown ul {
@@ -154,7 +171,7 @@ a {
 }
 
 .navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
-  color: #47b2e4;
+  color: #FFD700;
 }
 
 .navbar .dropdown:hover > ul {
@@ -739,7 +756,7 @@ a {
 }
 
 .cta {
-  background: linear-gradient(rgba(40, 58, 90, 0.9), rgba(40, 58, 90, 0.9)), url("../images/bg-bangunan.jpg") fixed center center;
+  background: linear-gradient(rgba(21, 209, 112, 0.8), rgba(21, 209, 112, 0.9)), url("../images/bg-bangunan.jpg") fixed center center;
   background-size: cover;
   padding: 120px 0;
 }
@@ -769,8 +786,9 @@ a {
 }
 
 .cta .cta-btn:hover {
-  background: #47b2e4;
-  border: 2px solid #47b2e4;
+  background: #FFD700;
+  border: 2px solid #FFD700;
+  color: #000;
 }
 
 .cta span {
@@ -838,6 +856,7 @@ a {
 }
 
 .our-portfolio .item .hover-effect {
+  opacity: 0.9;
   position: absolute;
   background-image: url(../images/hover-bg.png);
   background-repeat: no-repeat;
@@ -902,7 +921,7 @@ a {
   content: '\f053';
   width: 46px;
   height: 46px;
-  background-color: #ff695f;
+  background-color: rgba(21, 209, 112, 0.8);
   display: inline-block;
   text-align: center;
   line-height: 46px;
@@ -926,7 +945,7 @@ a {
   /* content: '\f054'; */
   width: 46px;
   height: 46px;
-  background-color: #ff695f;
+  background-color: rgba(21, 209, 112, 0.8);
   display: inline-block;
   text-align: center;
   line-height: 46px;
@@ -942,7 +961,7 @@ a {
   /* content: '\f054'; */
   width: 46px;
   height: 46px;
-  background-color: #ff695f;
+  background-color: rgba(21, 209, 112, 0.8);
   display: inline-block;
   text-align: center;
   line-height: 46px;
@@ -960,7 +979,7 @@ a {
 .owl-portfolio .owl-dots .owl-dot {
   width: 6px;
   height: 6px;
-  background-color: #ff695f;
+  background-color: rgba(21, 209, 112, 0.8);
   border-radius: 50%;
   opacity: 0.3;
   margin: 0px 5px;
@@ -974,7 +993,7 @@ a {
 
 #footer {
   font-size: 14px;
-  background: #37517e;
+  background: rgba(23, 176, 100, 0.9);
   color: #fff;
 }
 
@@ -1006,7 +1025,7 @@ a {
   font-size: 18px;
   display: inline-block;
   background: #fff;
-  color: #47b2e4;
+  color: #FFD700;
   line-height: 1;
   padding: 8px 0;
   margin-right: 4px;
@@ -1017,7 +1036,7 @@ a {
   transition: 0.3s;
 }
 #footer .social-links a:hover {
-  background: #209dd8;
+  background: #dfbd00;
   color: #fff;
   text-decoration: none;
 }
@@ -1075,13 +1094,23 @@ a {
   background: none;
   font-size: 16px;
   padding: 0 20px;
-  background: #47b2e4;
-  color: #fff;
+  background: #FFD700;
+  color: #000;
   transition: 0.3s;
   border-radius: 50px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
 .cari form input[type="submit"]:hover {
-  background: #209dd8;
+  background: #dfbd00;
+}
+
+@media (max-width: 768px) {
+  .cari form {
+    margin-top: 30px;
+  }
+
+  #footer .kanan {
+    text-align: center;
+  }
 }
