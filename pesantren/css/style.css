@@ -214,12 +214,16 @@ a {
   transition: 0.5s;
 }
 
+.mobile-nav-toggle::before {
+  display: none;
+}
+
 .mobile-nav-toggle.fa-times {
   color: #fff;
 }
 
 @media (max-width: 991px) {
-  .mobile-nav-toggle {
+  .mobile-nav-toggle::before {
     display: block;
   }
   .navbar ul {
