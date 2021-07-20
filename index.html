@@ -22,8 +22,16 @@
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
 	<link rel="icon" type="image/png" href="favicon.ico"/>
-<link rel="icon" type="image/png" href="favicon.png"/>
+	<link rel="icon" type="image/png" href="favicon.png"/>
 	<!-- <link rel="stylesheet" href="css/colorlib-style.css"> -->
+	<system.webServer>
+		<staticContent>
+		  <remove fileExtension=".woff" />
+		  <mimeMap fileExtension=".woff" mimeType="application/font-woff" />
+		  <remove fileExtension=".woff2" />
+		  <mimeMap fileExtension=".woff2" mimeType="font/x-woff" />
+		</staticContent>  
+	  </system.webServer>
   </head>
   <body data-spy="scroll" data-target=".hero">
 
