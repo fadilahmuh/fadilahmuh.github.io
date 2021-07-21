@@ -10,14 +10,14 @@
 	
 	
 
-	$(window).stellar({
-		responsive: true,
-		parallaxBackgrounds: true,
-		parallaxElements: true,
-		horizontalScrolling: false,
-		hideDistantElements: false,
-		scrollProperty: 'scroll'
-	  });
+	// $(window).stellar({
+	// 	responsive: true,
+	// 	parallaxBackgrounds: true,
+	// 	parallaxElements: true,
+	// 	horizontalScrolling: false,
+	// 	hideDistantElements: false,
+	// 	scrollProperty: 'scroll'
+	//   });
 
 	  const onscroll = (el, listener) => {
 		el.addEventListener('scroll', listener)
@@ -197,18 +197,18 @@
 		}
 	}, true);
 
-	let selectHeader = select('#header')
-  	if (selectHeader) {
-    const headerScrolled = () => {
-      if (window.scrollY > 100) {
-        selectHeader.classList.add('header-scrolled')
-      } else {
-        selectHeader.classList.remove('header-scrolled')
-      }
-    }
-    window.addEventListener('load', headerScrolled)
-    onscroll(document, headerScrolled)
-  }
+// 	let selectHeader = select('#header')
+//   	if (selectHeader) {
+//     const headerScrolled = () => {
+//       if (window.scrollY > 100) {
+//         selectHeader.classList.add('header-scrolled')
+//       } else {
+//         selectHeader.classList.remove('header-scrolled')
+//       }
+//     }
+//     window.addEventListener('load', headerScrolled)
+//     onscroll(document, headerScrolled)
+//   }
 	
 
 	// $('nav .dropdown').hover(function(){
