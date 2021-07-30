@@ -201,16 +201,19 @@
   };
   carousel();
 
-  $("#slick-gallery").slick({
-    rows: 2,
-    dots: false,
-    prevArrow : '<i class="fas fa-chevron-left sa-left"></i>',
-    nextArrow : '<i class="fas fa-chevron-right sa-right"></i>',
-    infinite : false,
-    speed: 300,
-    slidesToShow: 3,
-    slidesToScroll: 2,
-  });
+  var slick = function () {
+    $("#slick-gallery").slick({
+      rows: 2,
+      dots: true,
+      prevArrow: '<i class="fas fa-chevron-left sa-left"></i>',
+      nextArrow: '<i class="fas fa-chevron-right sa-right"></i>',
+      infinite: false,
+      speed: 300,
+      slidesToShow: 3,
+      slidesToScroll: 2,
+    });   
+  };
+  slick();
 
   lightbox.option({
     fitImagesInViewport: true,

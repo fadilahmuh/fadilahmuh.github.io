@@ -1624,3 +1624,54 @@ a {
   left: -45px;
 }
 
+.slick-dots {
+  position: absolute;
+  bottom: -25px;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.slick-dots li{
+  width: 10px;
+  height: 10px;
+}
+
+.slick-dots li button {
+  width: 6px;
+  height: 6px;
+  background-color: rgba(21, 209, 112, 0.8);
+  border-radius: 50%;
+  opacity: 0.3;
+  margin: 0px 5px;
+  padding: 0 3px !important;
+}
+
+/* .slick-dots li button:before {
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: 0;
+  bottom: 0;
+  width: 14px;
+  height: 14px;
+  content: "";
+  border: 1px solid #e6e6e6;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+} */
+
+.slick-dots .slick-active button{
+  background: #b3b3b3;
+  padding: 6px 6px !important;
+  opacity: 1;
+}
+
+.slick-dots li.slick-active{
+  margin-right: 10px !important;
+}
