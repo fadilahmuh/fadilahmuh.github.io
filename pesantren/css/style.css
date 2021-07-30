@@ -1183,6 +1183,12 @@ a {
   width: 100%;
   height: 250px;
 }
+
+.map-kontak {
+  border: 0px;
+  width: 100%;
+  height: 100%;
+}
 @media (max-width: 1024px) {
   .map {
     height: 200px;
@@ -1193,6 +1199,13 @@ a {
     height: 200px;
   }
 }
+
+@media (max-width: 767.5px) {
+  .map-kontak {
+    height: 300px;
+  }
+}
+
 .cari form {
   background: #fff;
   padding: 6px 10px;
@@ -1605,14 +1618,14 @@ a {
   margin-right: 25px;
 }
 
-.slick-slider:hover .slick-arrow{
+.slick-slider:hover .slick-arrow {
   visibility: visible;
   background-color: rgba(21, 209, 112, 0.8);
   margin-left: 0;
   margin-right: 0;
 }
 
-.slick-arrow:hover{
+.slick-arrow:hover {
   opacity: 1;
 }
 
@@ -1635,7 +1648,7 @@ a {
   text-align: center;
 }
 
-.slick-dots li{
+.slick-dots li {
   width: 10px;
   height: 10px;
 }
@@ -1666,13 +1679,13 @@ a {
   border-radius: 50%;
 } */
 
-.slick-dots .slick-active button{
+.slick-dots .slick-active button {
   background: #b3b3b3;
   padding: 6px 6px !important;
   opacity: 1;
 }
 
-.slick-dots li.slick-active{
+.slick-dots li.slick-active {
   margin-right: 10px !important;
 }
 
@@ -1681,17 +1694,17 @@ a {
   cursor: pointer;
 }
 
-.yt-thumb img{
+.yt-thumb img {
   opacity: 1;
   display: block;
   width: 100%;
   height: auto;
-  transition: .5s ease;
+  transition: 0.5s ease;
   backface-visibility: hidden;
 }
 
 .yt-thumb .overlay {
-  transition: .5s ease;
+  transition: 0.5s ease;
   opacity: 0.7;
   position: absolute;
   top: 50%;
@@ -1704,16 +1717,59 @@ a {
   background: transparent;
 }
 
-.yt-thumb .overlay i{
+.yt-thumb .overlay i {
   color: red;
   font-size: 5rem;
 }
 
-.yt-thumb:hover .yt-thumb img{
+.yt-thumb:hover .yt-thumb img {
   opacity: 0.3;
 }
 
 .yt-thumb:hover .overlay {
   opacity: 1;
   background: rgba(0, 0, 0, 0.4);
+}
+
+.info-wrap {
+  background: rgba(21, 209, 112, 0.6);
+}
+.info-wrap h3 {
+  color: #fff;
+}
+
+.info-wrap .dbox {
+  width: 100%;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 25px;
+}
+.info-wrap .dbox:last-child {
+  margin-bottom: 0;
+}
+.info-wrap .dbox p {
+  margin-bottom: 0;
+}
+.info-wrap .dbox p span {
+  font-weight: 600;
+  color: #fff;
+}
+.info-wrap .dbox p a {
+  color: #fff;
+}
+.info-wrap .dbox .icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+}
+.info-wrap .dbox .icon span {
+  font-size: 20px;
+  color: #fff;
+}
+.info-wrap .dbox .text {
+  width: calc(100% - 50px);
+}
+
+.card-kontak {
+  box-shadow: 0 4px 20px -8px rgb(0 0 0 / 30%);
 }
