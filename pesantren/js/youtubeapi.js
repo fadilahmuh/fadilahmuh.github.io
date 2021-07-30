@@ -27,10 +27,7 @@ $.get(
           vidURL = "https://www.youtube.com/watch?v=" + vidId;
           vidThumb = item.snippet.thumbnails.standard.url;
 
-          output =
-            '<div class="slide-item"><div class="thumb"><a href="'+ vidURL +'" data-lity><img src="' +
-            vidThumb +
-            '" alt="" /></a></div></div>';
+          output = '<div class="slide-item"><div class="yt-thumb"><a href="'+ vidURL +'"  data-lity><img src="' + vidThumb + '" alt="" /><div class="overlay d-flex align-items-center justify-content-center"><i class="fab fa-youtube"></i></div></a></div></div>';
 
           $("#yt_res").append(output);
         });
@@ -44,9 +41,31 @@ $.get(
           speed: 300,
           slidesToShow: 3,
           slidesToScroll: 2,
+          responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 2,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }    
+          ]
         });
       }
     );
-    // console.log("YT Api executed");
   }
 );

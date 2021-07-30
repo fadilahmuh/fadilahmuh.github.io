@@ -1675,3 +1675,45 @@ a {
 .slick-dots li.slick-active{
   margin-right: 10px !important;
 }
+
+.yt-thumb {
+  position: relative;
+  cursor: pointer;
+}
+
+.yt-thumb img{
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.yt-thumb .overlay {
+  transition: .5s ease;
+  opacity: 0.7;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  background: transparent;
+}
+
+.yt-thumb .overlay i{
+  color: red;
+  font-size: 5rem;
+}
+
+.yt-thumb:hover .yt-thumb img{
+  opacity: 0.3;
+}
+
+.yt-thumb:hover .overlay {
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.4);
+}
