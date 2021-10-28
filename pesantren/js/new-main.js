@@ -46,6 +46,19 @@
   };
   loader();
 
+  // var marq = function () {
+  //   $(".marquee").marquee({
+  //     // duration: 10000,
+  //     speed : 50,
+  //     gap: 50,
+  //     delayBeforeStart: 0,
+  //     direction: "left",      
+  //     duplicated: true,
+  //     pauseOnHover : true,
+  //   });
+  // }
+  // marq();
+
   var carousel = function () {
     $(".home-slider").owlCarousel({
       loop: true,
@@ -212,7 +225,7 @@
       mouseDrag: false,
       touchDrag: false
     });
-    console.log('donasi init');
+    // console.log('donasi init');
   };
   carousel();
 
@@ -251,10 +264,6 @@
       ],
     });
 
-    $("#slick-donasi").slick({
-      autoplay: true,
-      autoplaySpeed: 2000,
-    });
   };
   slick();
 

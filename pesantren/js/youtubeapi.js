@@ -1,5 +1,7 @@
+$channelId = $('#yt_res').attr('yt-id');
+// console.log($test);
 $apikey = "AIzaSyBswKibMjCpmTpH9Z9g7v88KJl7xxhvGa8";
-$channelId = "UC6Wp_bA0LWBpJg2-nCIG88Q";
+// $channelId = "UC6Wp_bA0LWBpJg2-nCIG88Q";
 // $pl_id;
 
 $.get(
@@ -25,7 +27,11 @@ $.get(
           vidTittle = item.snippet.title;
           vidId = item.snippet.resourceId.videoId;
           vidURL = "https://www.youtube.com/watch?v=" + vidId;
-          vidThumb = item.snippet.thumbnails.standard.url;
+          if ('standard' in item.snippet.thumbnails) {
+            vidThumb = item.snippet.thumbnails.standard.url;
+          } else {
+            vidThumb = item.snippet.thumbnails.high.url;
+          }
 
           output = '<div class="slide-item"><div class="yt-thumb"><a href="'+ vidURL +'"  data-lity><img src="' + vidThumb + '" alt="" /><div class="overlay d-flex align-items-center justify-content-center"><i class="fab fa-youtube"></i></div></a></div></div>';
 

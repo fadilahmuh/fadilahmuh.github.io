@@ -1,0 +1,25 @@
+/**
+ *
+ * You can write your CSS code here, DO NOT touch the default JavaScript file
+ * because it will make it harder for you to update.
+ * 
+ */
+
+/*# sourceMappingURL=custom.css.map */
+
+
+.green-gradient{
+    background : linear-gradient(rgba(21, 209, 112, 0.8), rgba(21, 209, 112, 0.9)), url(../img/bg-bangunan.jpg) fixed center center;
+}
+
+textarea{
+    overflow: auto;
+    width: inherit;
+    height: 15rem;
+    resize: both;
+}
+
+.img-galery{
+    width: 100%;
+    height: auto;
+}
