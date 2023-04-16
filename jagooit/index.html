@@ -1,0 +1,1228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/favicon.ico"/>
+	<link rel="icon" type="image/png" href="/favicon.png"/>
+    <title>JagooIT - FadilahMuh</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0-alpha3/js/bootstrap.bundle.min.js" integrity="sha512-vIAkTd3Ary9rwf0lrb9kIipyIkavKpYGnyopBXs6SiLfNSzAvCNvvQvKwBV5Xlag4O8oZpZ5U5n4bHoErGQxjw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>  
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.all.min.js"></script>
+</head>
+<body>
+    <main class="flex-shrink-0">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+            <div class="container px-5">
+                <a class="navbar-brand" href="index.html"><i><span class="fw-bolder">Jagoo<span class="text-danger">IT</span></span></i></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+                        <li class="nav-item"><a class="nav-link" href="https://fadilahmuh.github.io">Portofolio</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Header-->
+        <header class="py-5">
+            <div class="container px-5 pb-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-xl-5">
+                        <!-- Header text content-->
+                        <div class="text-center text-xxl-start">
+                            <div class="fs-3 fw-bold text-muted"><i><span class="fw-bolder">Jagoo<span class="text-danger">IT</span></span></i> Bootcamp Instensif</div>
+                            <h1 class="display-3 fw-bolder mb-5"><span class="text-gradient d-inline">Fullstack Developers</span></h1>
+                            <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
+                                <a class="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder" href="resume.html">Resume</a>
+                                <a class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder" href="projects.html">Projects</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-7">
+                        <!-- Header profile picture-->
+                        <div class="d-flex justify-content-center mt-5 mt-xl-0">
+                            <div id="carouselExample" class="carousel slide my-4">
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img src="wp1828925.png" class="card-img" alt="...">
+                                    <div class="card-img-overlay d-flex align-items-center justify-content-start">
+                                      <div>              
+                                        <div class="overflow-hidden">
+                                          <h2 class="text-white d-none d-sm-block ms-4">Eat, Sleep, Code & Repeat</h2>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="wp2099914-2789260229.jpg" class="d-block w-100" alt="...">
+                                    <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                                      <div>              
+                                        <div class="overflow-hidden">
+                                          <h2 class="text-white d-none d-sm-block ms-4">Learn Programming Now</h2>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Next</span>
+                                </button>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- About Section-->
+        <section class="bg-light py-5">
+            <div class="container px-5">
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-xxl-11">
+                        <div class="my-5">
+                            <p class="lead fw-light mb-4 text-center">Hasil Latihan</p>
+                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                  <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Pertemuan 1</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                  <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Pertemuan 2</button>
+                                </li>
+                              </ul>
+                              <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+
+                                    <div class="row">
+                                        <div class="col-3 card border border-0">
+                                          <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pt-3">
+                                            <nav class="nav nav-pills flex-column">
+                                              <a class="nav-link" href="#pertemuan-1">Formulir Pendaftaran</a>
+                                            </nav>
+                                          </nav>
+                                        </div>
+                                      
+                                        <div class="col-8 ps-4">
+                                          <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0">
+                                            <div id="pertemuan-1">
+                                              <h2><i class="fa-brands fa-html5"></i> HTML</h2>
+                                              <h4>Formulir Pendaftaran</h4>
+                                              <div class="row">
+                                                <div class="card">
+                                                <div class="col-12 col-sm-8 mt-3">
+                                                    <form action="" method="post" enctype="multipart/form-data">
+                                                    <div class="mb-3">
+                                                      <label for="" class="form-label">Nama Lengkap</label>
+                                                      <input type="text" name="nama" class="form-control" placeholder="Fannie M Fadilah">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                      <label for="" class="form-label">Email</label>
+                                                      <input type="email" name="email" class="form-control" placeholder="fadilahmuhammad800@gmail.com">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                      <label for="" class="form-label">Password</label>
+                                                      <input type="password" name="password" class="form-control" placeholder="*******">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                      <label for="" class="form-label">Jenis Kelamin</label>
+                                                      <div class="form-check">
+                                                        <input class="form-check-input" type="radio" name="jenis_kelamin" id="jk1">
+                                                        <label class="form-check-label" for="jk1">
+                                                          Laki-laki
+                                                        </label>
+                                                      </div>
+                                                      <div class="form-check">
+                                                        <input class="form-check-input" type="radio" name="jenis_kelamin" id="jk2">
+                                                        <label class="form-check-label" for="jk2">
+                                                          Perempuan
+                                                        </label>
+                                                      </div>
+                                                    </div>
+                                                    <div class="mb-3">
+                                                      <label for="" class="form-label">Alamat</label>
+                                                      <textarea name="alamat" class="form-control" rows="3"></textarea>
+                                                    </div>
+                                                    <div class="mb-3">
+                                                      <label for="" class="form-label">Kota</label>
+                                                      <select name="kota" class="form-select" aria-label="Pilih Kota">
+                                                        <option value="bdg">Bandung</option>
+                                                        <option value="jkt">Jakarta</option>
+                                                        <option value="sby">Surabaya</option>
+                                                        <option value="mks">Makassar</option>
+                                                      </select>
+                                                    </div>
+                                                    <div class="mb-3">
+                                                      <label for="" class="form-label">Hobi</label>
+                                                      <div class="form-check">
+                                                        <input name="hobi[]" class="form-check-input" type="checkbox" value="olahraga" id="hb1">
+                                                        <label class="form-check-label" for="hb1">
+                                                          Olahraga
+                                                        </label>
+                                                      </div>
+                                                      <div class="form-check">
+                                                        <input name="hobi[]" class="form-check-input" type="checkbox" value="musik" id="hb2">
+                                                        <label class="form-check-label" for="hb2">
+                                                          Musik
+                                                        </label>
+                                                      </div>
+                                                      <div class="form-check">
+                                                        <input name="hobi[]" class="form-check-input" type="checkbox" value="travel" id="hb3">
+                                                        <label class="form-check-label" for="hb2">
+                                                          Traveling
+                                                        </label>
+                                                      </div>
+                                                    </div>
+                                                    <div class="mb-3">
+                                                      <button type="submit" class="btn btn-primary mb-3">Submit</button>
+                                                    </div>
+                                                  </form>
+                                                  </div>
+                                              </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+
+                                    <div class="row">
+                                        <div class="col-3 card border border-0">
+                                          <nav id="navbar-example1" class="h-100 flex-column align-items-stretch pt-3">
+                                            <nav class="nav nav-pills flex-column">
+                                                <a class="nav-link" href="#pertemuan-2-a">Javascript</a>
+                                                <nav class="nav nav-pills flex-column">
+                                                  <a class="nav-link ms-3 my-1" href="#pertemuan-2-1">Introduction</a>
+                                                </nav>
+                                                <a class="nav-link" href="#pertemuan-2-b">String, Number & Data Type</a>
+                                                <nav class="nav nav-pills flex-column">
+                                                  <a class="nav-link ms-3 my-1" href="#pertemuan-2-2">Var</a>
+                                                  <a class="nav-link ms-3 my-1" href="#pertemuan-2-3">Let</a>
+                                                  <a class="nav-link ms-3 my-1" href="#pertemuan-2-4">Const</a>
+                                                </nav>
+                                                <a class="nav-link" href="#pertemuan-2-c">Latihan 1</a>
+                                                <a class="nav-link" href="#pertemuan-2-d">Conditional</a>
+                                                <nav class="nav nav-pills flex-column">
+                                                    <a class="nav-link ms-3 my-1" href="#pertemuan-2-5">If else</a>
+                                                    <a class="nav-link ms-3 my-1" href="#pertemuan-2-6">Switch case</a>
+                                                </nav>
+                                                <a class="nav-link" href="#pertemuan-2-e">Latihan 2</a>
+                                                <a class="nav-link" href="#pertemuan-2-f">Looping</a>
+                                                <nav class="nav nav-pills flex-column">
+                                                    <a class="nav-link ms-3 my-1" href="#pertemuan-2-7">While</a>
+                                                    <a class="nav-link ms-3 my-1" href="#pertemuan-2-8">Do while</a>
+                                                    <a class="nav-link ms-3 my-1" href="#pertemuan-2-9">For</a>
+                                                </nav>
+                                                <a class="nav-link" href="#pertemuan-2-g">Latihan 3</a>
+                                                <a class="nav-link" href="#pertemuan-2-h">Array</a>
+                                                <nav class="nav nav-pills flex-column">
+                                                    <a class="nav-link ms-3 my-1" href="#pertemuan-2-10">Array</a>
+                                                    <a class="nav-link ms-3 my-1" href="#pertemuan-2-11">Array-Object</a>
+                                                </nav>
+                                                <a class="nav-link" href="#pertemuan-2-i">Latihan 4</a>
+                                                <a class="nav-link" href="#pertemuan-2-j">Function</a>
+                                                <nav class="nav nav-pills flex-column">
+                                                    <a class="nav-link ms-3 my-1" href="#pertemuan-2-12">Function</a>
+                                                    <a class="nav-link ms-3 my-1" href="#pertemuan-2-13">Arrow Function</a>
+                                                </nav>
+                                                <a class="nav-link" href="#pertemuan-2-k">Latihan 5</a>
+                                                <a class="nav-link" href="#pertemuan-2-l">Object</a>
+                                                <nav class="nav nav-pills flex-column">
+                                                    <a class="nav-link ms-3 my-1" href="#pertemuan-2-14">Object</a>
+                                                    <a class="nav-link ms-3 my-1" href="#pertemuan-2-15">Inheritence</a>
+                                                </nav>
+                                                <a class="nav-link" href="#pertemuan-2-m">Latihan 6</a>
+                                                <a class="nav-link" href="#pertemuan-2-n">HTML + JavaScript</a>
+                                                <a class="nav-link" href="#pertemuan-2-o">Latihan 7</a>
+                                                <a class="nav-link" href="#pertemuan-2-p">DOM (Document Object Model)</a>
+                                                <a class="nav-link" href="#pertemuan-2-q">Latihan 8</a>
+                                                <a class="nav-link" href="#pertemuan-2-r">Storage</a>
+                                                <a class="nav-link" href="#pertemuan-2-s">Latihan 9</a>
+                                            </nav>
+                                          </nav>
+                                        </div>
+                                      
+                                        <div class="col-9 ps-4">
+                                          <div data-bs-spy="scroll" data-bs-target="#navbar-example1" data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0">
+                                            <div id="pertemuan-2-a">
+                                                <h2><i class="fa-brands fa-square-js"></i> JavaScript</h2>
+                                            </div>
+                                            <div id="pertemuan-2-1" class="card p-4">
+                                                <h4>Introduction</h4>
+                                                <p>Komentar pada <i>line code</i> JavaScript menggunakan 2 garis miring "//"</p>
+                                                <div class="highlight card bg-dark text-white border">
+                                                    <pre class="ms-2" tabindex="0" class="chroma">
+                                                        <code class="language-html" data-lang="html"><span class="line">
+// Contoh penggunaan Komentar
+// Data type
+let x = 2;
+let y = 5;</code></pre>
+                                                </div>
+                                            </div>
+                                            <div id="pertemuan-2-b">
+                                                <h2 class="mt-4">String, Number & Data Type</h2>
+                                            </div>
+                                            <div id="pertemuan-2-2" class="card p-4 mb-3">
+                                                <h4>Var</h4>
+                                                <p>Penggunaan type var sebelum tahun 2015 (sebelum let & const), type var dapat di deklarasi ulang</p>
+                                                <h6 class="mt-2">Code:</h6>
+                                                <div class="highlight card bg-dark text-white border">
+                                                    <pre class="ms-2" tabindex="0" class="chroma">
+                                                        <code class="language-js" data-lang="js"><span class="line">
+// ===var===
+var kalimat = "Latihan nih";
+
+console.log(`Kalimat = ${kalimat}`);
+
+kalimat = "Udah di edit nih";
+console.log(`Kalimat (edited) = ${kalimat}`);
+
+// hoisting
+var angka;
+console.log(angka);
+angka = 11;</code></pre>
+                                                </div>
+
+                                                <h6 class="mt-2">Output: <span class="badge rounded-pill text-bg-primary">Tekan F12 atau buka Developer Tools (console) untuk melihat output</span></h6>
+                                                <div class="highlight card bg-dark text-white border">
+                                                    <pre class="ms-2" tabindex="0" class="chroma">
+                                                        <code class="language-html" data-lang="html"><span class="line">
+Kalimat = Latihan nih
+
+Kalimat (edited) = Udah di edit nih
+
+undefined</code></pre>
+                                                </div>
+                                            </div>
+                                            <div id="pertemuan-2-3" class="card p-4 mb-3">
+                                                <h4>Let</h4>
+                                                <p>Penggunaan type Let sama seperti var yang dapat di deklarasi ulang</p>
+                                                <h6 class="mt-2">Code:</h6>
+                                                <div class="highlight card bg-dark text-white border">
+                                                    <pre class="ms-2" tabindex="0" class="chroma">
+                                                        <code class="language-js" data-lang="js"><span class="line">
+// ===let===
+let kalimat2 = "Penggunaan let";
+
+console.log(`Kalimat = ${kalimat2}`);</code></pre>
+                                                </div>
+
+                                                <h6 class="mt-2">Output: <span class="badge rounded-pill text-bg-primary">Tekan F12 atau buka Developer Tools (console) untuk melihat output</span></h6>
+                                                <div class="highlight card bg-dark text-white border">
+                                                    <pre class="ms-2" tabindex="0" class="chroma">
+                                                        <code class="language-html" data-lang="html"><span class="line">
+Kalimat = Penggunaan let</code></pre>
+                                                </div>
+                                            </div>
+                                            <div id="pertemuan-2-4" class="card p-4 mb-3">
+                                                <h4>Const</h4>
+                                                <p>Penggunaan type Const tidak dapat di deklarasi ulang</p>
+                                                <h6 class="mt-2">Code:</h6>
+                                                <div class="highlight card bg-dark text-white border">
+                                                    <pre class="ms-2" tabindex="0" class="chroma">
+                                                        <code class="language-js" data-lang="js"><span class="line">
+// ===const===
+const kalimat3 = "Contoh penggunaan const";
+console.log(`Kalimat = ${kalimat3}`);
+
+<span class="text-danger"><i>// code line berikut diberikan comment agar tidak terjadi error dan code line lain dapat di execute</i></span>
+kalimat3 = "Deklarasi ulang const";
+console.log(`Kalimat (edited) = ${kalimat3}`);</code></pre>
+                                                </div>
+
+                                                <h6 class="mt-2">Output: <span class="badge rounded-pill text-bg-primary">Tekan F12 atau buka Developer Tools (console) untuk melihat output</span></h6>
+                                                <div class="highlight card bg-dark text-white border">
+                                                    <pre class="ms-2" tabindex="0" class="chroma">
+                                                        <code class="language-html" data-lang="html"><span class="line">
+Kalimat = Contoh penggunaan const
+
+Uncaught TypeError: Assignment to constant variable.</code></pre>
+                                                </div>
+                                            </div>
+                                            <div id="pertemuan-2-c" class="card p-4 mb-3">
+                                                <h2>Latihan 1</h2>
+                                                <h6 class="mt-2">Code:</h6>
+                                                <div class="highlight card bg-dark text-white border">
+                                                    <pre class="ms-2" tabindex="0" class="chroma">
+                                                        <code class="language-js" data-lang="js"><span class="line">
+// latihan
+let lath = `Hello what's up good people`;
+
+let funclet = (rep = 'Yow') => {
+    console.log(lath);
+    let mod = 6;
+    if (mod % 2 == 0) { // modulasi
+        let lath_replace = lath.replace('Hello', rep);
+        console.log(lath_replace);
+    }
+}
+
+funclet('Hi');</code></pre>
+                                                </div>
+
+                                                <h6 class="mt-2">Output: <span class="badge rounded-pill text-bg-primary">Tekan F12 atau buka Developer Tools (console) untuk melihat output</span></h6>
+                                                <div class="highlight card bg-dark text-white border">
+                                                    <pre class="ms-2" tabindex="0" class="chroma">
+                                                        <code class="language-html" data-lang="html"><span class="line">
+Hello what's up good people
+
+Hi what's up good people</code></pre>
+                                                </div>
+                                            </div>
+                                            <div id="pertemuan-2-d">
+                                                <h2 class="mt-4">Conditional</h2>
+                                            </div>
+                                            <div id="pertemuan-2-5" class="card p-4 mb-3">
+                                                <h2>If Else</h2>
+                                                <h6 class="mt-2">Code:</h6>
+                                                <div class="highlight card bg-dark text-white border">
+                                                    <pre class="ms-2" tabindex="0" class="chroma">
+                                                        <code class="language-js" data-lang="js"><span class="line">
+// If
+let nilai = 84;
+if(nilai >= 80 && nilai < 100){
+console.log('Anda lulus dengan nilai A');
+} else if (nilai >= 73 && nilai < 80) {
+console.log('Anda lulus dengan nilai AB');
+} else if (nilai >= 65 && nilai < 73) {
+console.log('Anda lulus dengan nilai B');
+} else if (nilai >= 60 && nilai < 65) {
+console.log('Anda lulus dengan nilai BC');
+} else if (nilai >= 50 && nilai < 60) {
+console.log('Anda lulus dengan nilai C');
+} else if (nilai >= 40 && nilai < 50) {
+console.log('Anda lulus dengan nilai D');
+} else if (nilai >= 0  && nilai < 40) {
+console.log('Anda tidak lulus');
+} </code></pre>
+                                                </div>
+
+                                                <h6 class="mt-2">Output: <span class="badge rounded-pill text-bg-primary">Tekan F12 atau buka Developer Tools (console) untuk melihat output</span></h6>
+                                                <div class="highlight card bg-dark text-white border">
+                                                    <pre class="ms-2" tabindex="0" class="chroma">
+                                                        <code class="language-html" data-lang="html"><span class="line">
+Anda lulus dengan nilai A</code></pre>
+                                                </div>
+                                            </div>
+                                            <div id="pertemuan-2-6" class="card p-4 mb-3">
+                                                <h2>Switch Case</h2>
+                                                <h6 class="mt-2">Code:</h6>
+                                                <div class="highlight card bg-dark text-white border">
+                                                    <pre class="ms-2" tabindex="0" class="chroma">
+                                                        <code class="language-js" data-lang="js"><span class="line">
+// switch
+var processor = 'amd';
+
+switch (processor) {
+    case 'intel':
+        console.log('Intel Corporation merupakan perusahaan yang bergerak dalam bidang penyedia chip semikonduktor dengan produk utama-nya perangkat dan komputer pribadi, prosesor, motherboard, chipset, komponen server, produk ethernet, nirkabel, barang elektronik konsumen, solid state drive dan produk-produk lainnya.');
+        break;
+    case 'amd':
+        console.log('Advanced Micro Devices, Inc. (AMD) adalah perusahaan semikonduktor multinasional Amerika yang berbasis di Santa Clara, California, yang mengembangkan prosesor komputer dan teknologi terkait untuk bisnis dan pasar konsumen.');
+        break;
+    default:
+        console.log('Pilihan processor gaada cuy');
+}</code></pre>
+                                                </div>
+
+                                                <h6 class="mt-2">Output: <span class="badge rounded-pill text-bg-primary">Tekan F12 atau buka Developer Tools (console) untuk melihat output</span></h6>
+                                                <div class="highlight card bg-dark text-white border">
+                                                    <pre class="ms-2" tabindex="0" class="chroma">
+                                                        <code class="language-html" data-lang="html"><span class="line">
+Advanced Micro Devices, Inc. (AMD) adalah perusahaan semikonduktor multinasional Amerika yang berbasis di Santa Clara, California, yang mengembangkan prosesor komputer dan teknologi terkait untuk bisnis dan pasar konsumen.</code></pre>
+                                                </div>
+                                            </div>
+                                            <div id="pertemuan-2-e" class="card p-4 mb-3">
+                                                <h2>Latihan 2</h2>
+                                                <h6 class="mt-2">Code:</h6>
+                                                <div class="highlight card bg-dark text-white border">
+                                                    <pre class="ms-2" tabindex="0" class="chroma">
+                                                        <code class="language-js" data-lang="js"><span class="line">
+// Latihan 2
+let provider = 'three';
+let pulsa = 50000;
+switch (provider) {
+    case 'tri':
+        if(pulsa >= 45000 && pulsa < 55000){
+            var harga = 45000;
+            console.log('Anda mendapatkan paket AON 9GB');
+        } else if (pulsa >= 31000 && pulsa < 45000) {
+            var harga = 31000;
+            console.log('Anda mendapatkan paket AON 6GB');
+        } else if (pulsa >= 21000 && pulsa < 31000) {
+            var harga = 21000;
+            console.log('Anda mendapatkan paket AON 3.5GB');
+        } else if (pulsa >= 15500 && pulsa < 21000) {
+            var harga = 15500;
+            console.log('Anda mendapatkan paket AON 2.5GB');
+        } else {
+            var harga = 0;
+            console.log('Wahh paket data belum ada');
+        } 
+        break;
+    case 'xl':
+        if(pulsa >= 43000 && pulsa < 62000){
+            var harga = 43000;
+            console.log('Anda mendapatkan paket XTRA COMBO Flex M 12GB');
+        } else if (pulsa >= 20000 && pulsa < 43000) {
+            var harga = 20000;
+            console.log('Anda mendapatkan paket XTRA COMBO Flex S 4.5GB');
+        } else {
+            var harga = 0;
+            console.log('Wahh paket data belum ada');
+        } 
+        break;
+    case 'im3':
+        if(pulsa >= 42000 && pulsa < 64000){
+            var harga = 420000
+            console.log('Anda mendapatkan paket Freedom Combo 10GB');
+        } else if (pulsa >= 31000 && pulsa < 42000) {
+            var harga = 31000;
+            console.log('Anda mendapatkan paket Freedom Combo 6GB');
+        } else {
+            var harga = 0;
+            console.log('Wahh paket data belum ada');
+        } 
+        break;
+    default:
+        var harga = 0;
+        console.log('Wah paket provider masih belum tersedia');
+        break;
+}
+
+console.log(`Harga : ${harga}`);
+console.log(`Sisa Pulsa : ${pulsa - harga}`);</code></pre>
+                                                </div>
+
+                                                <h6 class="mt-2">Output: <span class="badge rounded-pill text-bg-primary">Tekan F12 atau buka Developer Tools (console) untuk melihat output</span></h6>
+                                                <div class="highlight card bg-dark text-white border">
+                                                    <pre class="ms-2" tabindex="0" class="chroma">
+                                                        <code class="language-html" data-lang="html"><span class="line">
+Anda mendapatkan paket AON 9GB
+Harga : 45000
+Sisa Pulsa : 5000</code></pre>
+                                                </div>
+                                            </div>
+                                            <div id="pertemuan-2-f">
+                                                <h2 class="mt-4">Looping</h2>
+                                            </div>
+                                            <div id="pertemuan-2-7" class="card p-4 mb-3">
+                                                <h2>While</h2>
+                                                <h6 class="mt-2">Code:</h6>
+                                                <div class="highlight card bg-dark text-white border">
+                                                    <pre class="ms-2" tabindex="0" class="chroma">
+                                                        <code class="language-js" data-lang="js"><span class="line">
+// while
+var counter = 10;
+
+while(counter >= 1){
+    console.log(`counter = ${counter}`);
+    counter--;
+}</code></pre>
+                                                </div>
+
+                                                <h6 class="mt-2">Output: <span class="badge rounded-pill text-bg-primary">Tekan F12 atau buka Developer Tools (console) untuk melihat output</span></h6>
+                                                <div class="highlight card bg-dark text-white border">
+                                                    <pre class="ms-2" tabindex="0" class="chroma">
+                                                        <code class="language-html" data-lang="html"><span class="line">
+counter = 10
+counter = 9
+counter = 8
+counter = 7
+counter = 6
+counter = 5
+counter = 4
+counter = 3
+counter = 2
+counter = 1</code></pre>
+                                                </div>
+                                            </div>
+                                            <div id="pertemuan-2-8" class="card p-4 mb-3">
+                                                <h2>Do while</h2>
+                                                <h6 class="mt-2">Code:</h6>
+                                                <div class="highlight card bg-dark text-white border">
+                                                    <pre class="ms-2" tabindex="0" class="chroma">
+                                                        <code class="language-js" data-lang="js"><span class="line">
+// do while
+var counter2 = 10;
+
+do{
+    console.log(`counter2 = ${counter2}`);
+    counter2--;
+} while(counter2 >=1) ;</code></pre>
+                                                </div>
+
+                                                <h6 class="mt-2">Output: <span class="badge rounded-pill text-bg-primary">Tekan F12 atau buka Developer Tools (console) untuk melihat output</span></h6>
+                                                <div class="highlight card bg-dark text-white border">
+                                                    <pre class="ms-2" tabindex="0" class="chroma">
+                                                        <code class="language-html" data-lang="html"><span class="line">
+counter2 = 10
+counter2 = 9
+counter2 = 8
+counter2 = 7
+counter2 = 6
+counter2 = 5
+counter2 = 4
+counter2 = 3
+counter2 = 2
+counter2 = 1</code></pre>
+                                                </div>
+                                            </div>
+                                            <div id="pertemuan-2-9" class="card p-4 mb-3">
+                                                <h2>For</h2>
+                                                <h6 class="mt-2">Code:</h6>
+                                                <div class="highlight card bg-dark text-white border">
+                                                    <pre class="ms-2" tabindex="0" class="chroma">
+                                                        <code class="language-js" data-lang="js"><span class="line">
+// for
+var counter3;
+
+for(counter3=10; counter3>=1; counter3--){
+    console.log(`counter3 = ${counter3}`);
+}</code></pre>
+                                                </div>
+
+                                                <h6 class="mt-2">Output: <span class="badge rounded-pill text-bg-primary">Tekan F12 atau buka Developer Tools (console) untuk melihat output</span></h6>
+                                                <div class="highlight card bg-dark text-white border">
+                                                    <pre class="ms-2" tabindex="0" class="chroma">
+                                                        <code class="language-html" data-lang="html"><span class="line">
+counter3 = 10
+counter3 = 9
+counter3 = 8
+counter3 = 7
+counter3 = 6
+counter3 = 5
+counter3 = 4
+counter3 = 3
+counter3 = 2
+counter3 = 1</code></pre>
+                                                </div>
+                                            </div>
+                                            <div id="pertemuan-2-g" class="card p-4 mb-3">
+                                                <h2>Latihan 3</h2>
+                                                <h6 class="mt-2">Code:</h6>
+                                                <div class="highlight card bg-dark text-white border">
+                                                    <pre class="ms-2" tabindex="0" class="chroma">
+                                                        <code class="language-js" data-lang="js"><span class="line">
+// latihan3
+var bintang = 5;
+
+while(bintang >= 1){
+    let bp = bintang;
+    let print ='';
+    if(bintang > 3){
+        do{
+            print += '*';
+            bp--;
+        } while(bp >=1) ;
+        console.log(print);
+    } else {
+        for(bp; bp>=1; bp--){
+            print += '*';
+        }
+        console.log(print);
+    }
+    bintang--;
+}</code></pre>
+                                                </div>
+
+                                                <h6 class="mt-2">Output: <span class="badge rounded-pill text-bg-primary">Tekan F12 atau buka Developer Tools (console) untuk melihat output</span></h6>
+                                                <div class="highlight card bg-dark text-white border">
+                                                    <pre class="ms-2" tabindex="0" class="chroma">
+                                                        <code class="language-html" data-lang="html"><span class="line">
+*****
+****
+***
+**
+*</code></pre>
+                                                </div>
+                                            </div>
+                                            <div id="pertemuan-2-h">
+                                                <h2 class="mt-4">Array</h2>
+                                            </div>
+                                            <div id="pertemuan-2-10" class="card p-4 mb-3">
+                                                <h2>Array</h2>
+                                                <h6 class="mt-2">Code:</h6>
+                                                <div class="highlight card bg-dark text-white border">
+                                                    <pre class="ms-2" tabindex="0" class="chroma">
+                                                        <code class="language-js" data-lang="js"><span class="line">
+// array
+let provider_list = ['Tri', 'XL', 'Indosat', 'Telkomsel'];
+console.log(`Provider List = ${provider_list}`);
+
+provider_list.shift();
+console.log(`Provider List (shift) = ${provider_list}`);
+
+provider_list.unshift('Smartfren');
+console.log(`Provider List (unshift) = ${provider_list}`);
+
+provider_list.splice(1, 1, 'By.U');
+console.log(`Provider List (splice) = ${provider_list}`);
+
+provider_list.push('Axis');
+console.log(`Provider List (push) = ${provider_list}`);
+
+let new_provider = ['Live.on', 'Switch']
+provider_list = provider_list.concat(new_provider);
+console.log(`Provider List (concat) = ${provider_list}`);
+
+provider_list.forEach( (item, index) => {
+    console.log(`Provider ${index+1} = ${item}`);
+});</code></pre>
+                                                </div>
+
+                                                <h6 class="mt-2">Output: <span class="badge rounded-pill text-bg-primary">Tekan F12 atau buka Developer Tools (console) untuk melihat output</span></h6>
+                                                <div class="highlight card bg-dark text-white border">
+                                                    <pre class="ms-2" tabindex="0" class="chroma">
+                                                        <code class="language-html" data-lang="html"><span class="line">
+Provider List = Tri,XL,Indosat,Telkomsel
+
+Provider List (shift) = XL,Indosat,Telkomsel
+
+Provider List (unshift) = Smartfren,XL,Indosat,Telkomsel
+
+Provider List (splice) = Smartfren,By.U,Indosat,Telkomsel
+
+Provider List (push) = Smartfren,By.U,Indosat,Telkomsel,Axis
+
+Provider List (concat) = Smartfren,By.U,Indosat,Telkomsel,Axis,Live.on,Switch
+
+Provider 1 = Smartfren
+Provider 2 = By.U
+Provider 3 = Indosat
+Provider 4 = Telkomsel
+Provider 5 = Axis
+Provider 6 = Live.on
+Provider 7 = Switch</code></pre>
+                                                </div>
+                                            </div>
+                                            <div id="pertemuan-2-11" class="card p-4 mb-3">
+                                                <h2>Array-Object</h2>
+                                                <h6 class="mt-2">Code:</h6>
+                                                <div class="highlight card bg-dark text-white border">
+                                                    <pre class="ms-2" tabindex="0" class="chroma">
+                                                        <code class="language-js" data-lang="js"><span class="line">
+//array-object
+var myProvider = {name: 'By.U', rating: 4, "total users": 4600000};
+myProvider.rating = 4.5;
+myProvider["ceo"] = 'Emma Sri Martini';
+
+for (var key in myProvider) {
+    console.log("key " + key + " has value " + myProvider[key]);
+}</code></pre>
+                                                </div>
+
+                                                <h6 class="mt-2">Output: <span class="badge rounded-pill text-bg-primary">Tekan F12 atau buka Developer Tools (console) untuk melihat output</span></h6>
+                                                <div class="highlight card bg-dark text-white border">
+                                                    <pre class="ms-2" tabindex="0" class="chroma">
+                                                        <code class="language-html" data-lang="html"><span class="line">
+key name has value By.U
+key rating has value 4.5
+key total users has value 4600000
+key ceo has value Emma Sri Martini</code></pre>
+                                                </div>
+                                            </div>
+                                            <div id="pertemuan-2-i" class="card p-4 mb-3">
+                                                <h2>Latihan 4</h2>
+                                                <h6 class="mt-2">Code:</h6>
+                                                <div class="highlight card bg-dark text-white border">
+                                                    <pre class="ms-2" tabindex="0" class="chroma">
+                                                        <code class="language-js" data-lang="js"><span class="line">
+// latihan 4
+let karyawan = [
+    {
+        nama: 'Budi',
+        username: 'BDI',
+        nomor_induk: 10981
+    },
+    {
+        nama: 'Maman',
+        username: 'MMN',
+        nomor_induk: 10982
+    },
+    {
+        nama: 'Ridwan',
+        username: 'RDW',
+        nomor_induk: 10983
+    },
+];
+
+karyawan.forEach((item, index) => {
+    if (item.username == 'RDW') {
+        console.log(item.nama);
+        console.log(item.nomor_induk);
+    }
+});</code></pre>
+                                                </div>
+
+                                                <h6 class="mt-2">Output: <span class="badge rounded-pill text-bg-primary">Tekan F12 atau buka Developer Tools (console) untuk melihat output</span></h6>
+                                                <div class="highlight card bg-dark text-white border">
+                                                    <pre class="ms-2" tabindex="0" class="chroma">
+                                                        <code class="language-html" data-lang="html"><span class="line">
+Nama: Ridwan
+Nomor Induk: 10983</code></pre>
+                                                </div>
+
+                                                <h4 class="mt-3">With input</h4>
+                                                <button type="button" onclick="search_karyawan()" class="btn btn-primary"><i class="fa-solid fa-magnifying-glass"></i> Search Karyawan</button>
+                                            </div>
+                                            <div id="pertemuan-2-j">
+                                                <h2 class="mt-4">Function</h2>
+                                            </div>
+                                            <div id="pertemuan-2-12" class="card p-4 mb-3">
+                                                <h2>Function</h2>
+                                                <h6 class="mt-2">Code:</h6>
+                                                <div class="highlight card bg-dark text-white border">
+                                                    <pre class="ms-2" tabindex="0" class="chroma">
+                                                        <code class="language-js" data-lang="js"><span class="line">
+<span class="text-primary">&lt;button type="button" onclick="delay()" class="btn btn-primary"&gt;Run Function&lt;/button&gt;</span>
+
+// function
+function timer_func() {
+    Swal.fire({
+        title: 'Berhasil!',
+        text:'Code berhasil di execute',
+        icon: 'success',
+    })   
+}
+
+function delay() {
+    let timer = setTimeout(timer_func, 3000);
+}</code></pre>
+                                                </div>
+
+                                                <h6 class="mt-2">Output:</h6>
+                                                <button type="button" onclick="delay()" class="btn btn-primary"><i class="fa-solid fa-play"></i> Run Function</button>
+                                            </div>
+                                            <div id="pertemuan-2-13" class="card p-4 mb-3">
+                                                <h2>Arrow Function</h2>
+                                                <h6 class="mt-2">Code:</h6>
+                                                <div class="highlight card bg-dark text-white border">
+                                                    <pre class="ms-2" tabindex="0" class="chroma">
+                                                        <code class="language-js" data-lang="js"><span class="line">
+// arrow function
+let example = () => {
+    return "Example of arrow function";
+}
+
+console.log(example());</code></pre>
+                                                </div>
+
+                                                <h6 class="mt-2">Output: <span class="badge rounded-pill text-bg-primary">Tekan F12 atau buka Developer Tools (console) untuk melihat output</span></h6>
+                                                <div class="highlight card bg-dark text-white border">
+                                                    <pre class="ms-2" tabindex="0" class="chroma">
+                                                        <code class="language-html" data-lang="html"><span class="line">
+Example of arrow function</code></pre>
+                                                </div>
+                                            </div>
+                                            <div id="pertemuan-2-k" class="card p-4 mb-3">
+                                                <h2>Latihan 5</h2>
+                                                <h6 class="mt-2">Code:</h6>
+                                                <div class="highlight card bg-dark text-white border">
+                                                    <pre class="ms-2" tabindex="0" class="chroma">
+                                                        <code class="language-js" data-lang="js"><span class="line">
+// latihan 5
+function by_username(query){
+    let src_index = karyawan.map(item => item.username).indexOf(query);
+    
+    return karyawan[src_index];
+}
+
+let get_karyawan = (username) => {
+    let kry = by_username(username);
+    console.log(`Nama: ${kry.nama}`);
+    console.log(`Nomor Induk: ${kry.nomor_induk}`);
+}
+
+get_karyawan('BDI');</code></pre>
+                                                </div>
+
+                                                <h6 class="mt-2">Output: <span class="badge rounded-pill text-bg-primary">Tekan F12 atau buka Developer Tools (console) untuk melihat output</span></h6>
+                                                <div class="highlight card bg-dark text-white border">
+                                                    <pre class="ms-2" tabindex="0" class="chroma">
+                                                        <code class="language-html" data-lang="html"><span class="line">
+Nama: Budi
+Nomor Induk: 10981</code></pre>
+                                                </div>
+                                            </div>
+                                            <div id="pertemuan-2-l">
+                                                <h2 class="mt-4">Object</h2>
+                                            </div>
+                                            <div id="pertemuan-2-14" class="card p-4 mb-3">
+                                                <h2>Object</h2>
+                                                <h6 class="mt-2">Code:</h6>
+                                                <div class="highlight card bg-dark text-white border">
+                                                    <pre class="ms-2" tabindex="0" class="chroma">
+                                                        <code class="language-js" data-lang="js"><span class="line">
+// object
+class Player {
+    constructor(x, y, z){
+        this.fullName = x, 
+        this.nickName = y,
+        this.role = z,
+        this.changeNickname = function(a) {
+            this.nickName = a
+        },
+        this.getInfo = function() {
+            return `Fullname: ${this.fullName} \nNickname: ${this.nickName} \nRole: ${this.role}`
+        }
+    }
+}
+    
+let Fad = new Player("Fadilah Muhammad","chaotix_", "Duelist");
+console.log(Fad.nickName);
+
+console.log(Fad.getInfo());
+
+Fad.changeNickname('PRX chaotix_');
+console.log(Fad.getInfo());</code></pre>
+                                                </div>
+
+                                                <h6 class="mt-2">Output: <span class="badge rounded-pill text-bg-primary">Tekan F12 atau buka Developer Tools (console) untuk melihat output</span></h6>
+                                                <div class="highlight card bg-dark text-white border">
+                                                    <pre class="ms-2" tabindex="0" class="chroma">
+                                                        <code class="language-html" data-lang="html"><span class="line">
+chaotix_
+
+Fullname: Fadilah Muhammad
+Nickname: chaotix_
+Role: Duelist
+
+Fullname: Fadilah Muhammad
+Nickname: PRX chaotix_
+Role: Duelist</code></pre>
+                                                </div>
+                                            </div>
+                                            <div id="pertemuan-2-15" class="card p-4 mb-3">
+                                                <h2>Inheritance</h2>
+                                                <h6 class="mt-2">Code:</h6>
+                                                <div class="highlight card bg-dark text-white border">
+                                                    <pre class="ms-2" tabindex="0" class="chroma">
+                                                        <code class="language-js" data-lang="js"><span class="line">
+// inheritance
+class PaketData{
+    constructor(){
+        this.aktif = 30;
+        this.kuota = 10;
+        this.getMasaAktif = function () {
+            return `Masa aktif paket: ${this.aktif} Hari`
+        }
+        this.getKuota = function () {
+            return `Sisa kuota utama: ${this.kuota} GB`
+        }
+    }  
+}
+
+class XtraNelp extends PaketData{
+    constructor(){
+        super();  
+        this.free_telp = 60;
+        this.price = 50000;
+    }  
+}
+
+var paket = new XtraNelp();
+
+console.log(paket);
+
+console.log(paket.getKuota());</code></pre>
+                                                </div>
+
+                                                <h6 class="mt-2">Output: <span class="badge rounded-pill text-bg-primary">Tekan F12 atau buka Developer Tools (console) untuk melihat output</span></h6>
+                                                <div class="highlight card bg-dark text-white border">
+                                                    <pre class="ms-2" tabindex="0" class="chroma">
+                                                        <code class="language-html" data-lang="html"><span class="line">
+aktif: 30
+free_telp: 60
+getKuota: <i>f</i> ()
+getMasaAktif: <i>f</i> ()
+kuota: 10 
+price: 50000
+
+Sisa kuota utama: 10 GB</code></pre>
+                                                </div>
+                                            </div>
+                                            <div id="pertemuan-2-m" class="card p-4 mb-3">
+                                                <h2>Latihan 6</h2>
+                                                <h6 class="mt-2">Code:</h6>
+                                                <div class="highlight card bg-dark text-white border">
+                                                    <pre class="ms-2" tabindex="0" class="chroma">
+                                                        <code class="language-js" data-lang="js"><span class="line">
+// latihan 6
+class PaketProvider{
+    constructor(provider, nama_paket){
+        this.provider = provider;
+        this.nama_paket = nama_paket;
+    }  
+}
+
+class Bulanan extends PaketData{
+    constructor(provider, nama_paket, harga, kuota){
+        super(provider, nama_paket);  
+        this.aktif = 60;
+        this.harga = harga;
+        this.kuota = kuota;
+    }  
+}
+
+let bulanan1 = new Bulanan('Tri', 'AON', 45000, 9);
+let bulanan2 = new Bulanan('Tri', 'AON', 60000, 12);
+
+console.log(bulanan1);
+console.log(bulanan2);</code></pre>
+                                                </div>
+
+                                                <h6 class="mt-2">Output: <span class="badge rounded-pill text-bg-primary">Tekan F12 atau buka Developer Tools (console) untuk melihat output</span></h6>
+                                                <div class="highlight card bg-dark text-white border">
+                                                    <pre class="ms-2" tabindex="0" class="chroma">
+                                                        <code class="language-html" data-lang="html"><span class="line">
+aktif: 60
+harga: 45000
+kuota: 9
+nama_paket: "AON"
+provider: "Tri"
+
+aktif: 60
+harga: 60000
+kuota: 12
+nama_paket: "AON"
+provider: "Tri"</code></pre>
+                                                </div>
+                                            </div>
+                                            <div id="pertemuan-2-n">
+                                                <h2 class="mt-4">HTML + JavaScript</h2>
+                                            </div>
+                                            <div class="card p-4 mb-3">
+                                                <h6 class="mt-2">Code:</h6>
+                                                <div class="highlight card bg-dark text-white border">
+                                                    <pre class="ms-2" tabindex="0" class="chroma">
+                                                        <code class="language-js" data-lang="js"><span class="line">
+<span class="text-primary">&lt;div class="form-check mt-2"&gt;
+    &lt;input id="a1" class="form-check-input" type="checkbox" onclick="fungsiKu1(this.value)" value="Pria"&gt;
+    &lt;label class="form-check-label" for="a1"&gt;
+        Pria
+    &lt;/label&gt;
+&lt;/div&gt;
+&lt;div class="form-check"&gt;
+    &lt;input id="a2" class="form-check-input" type="checkbox" onclick="fungsiKu1(this.value)" value="Wanita"&gt;
+    &lt;label class="form-check-label" for="a2"&gt;
+        Wanita
+    &lt;/label&gt;
+&lt;/div&gt;
+
+&lt;p id="output"&gt;Pilih checkbox&lt;/p&gt;</span>
+
+function fungsiKu1(x) {
+    if(document.getElementById("a1").checked==true && document.getElementById("a2").checked==false){
+        document.getElementById("output").innerHTML = 'Pria'}
+    
+    else if(document.getElementById("a1").checked==false && document.getElementById("a2").checked==true){
+        document.getElementById("output").innerHTML = 'Wanita'}
+    
+    else if(document.getElementById("a1").checked==true && document.getElementById("a2").checked==true){
+        document.getElementById("output").innerHTML = 'Pria & Wanita'}
+    
+    else{document.getElementById("output").innerHTML = ''}
+}</code></pre>
+                                                </div>
+
+                                                <h6 class="mt-2">Output: </h6>
+                                                <div class="form-check mt-2">
+                                                    <input id="a1" class="form-check-input" type="checkbox" onclick="fungsiKu1(this.value)" value="Pria">
+                                                    <label class="form-check-label" for="a1">
+                                                      Pria
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input id="a2" class="form-check-input" type="checkbox" onclick="fungsiKu1(this.value)" value="Wanita">
+                                                    <label class="form-check-label" for="a2">
+                                                        Wanita
+                                                    </label>
+                                                </div>
+
+                                                <p id="output">Pilih checkbox</p>
+
+                                            </div>
+                                            <div id="pertemuan-2-o" class="card p-4 mb-3">
+                                                <h2>Latihan 7</h2>
+                                                <h6 class="mt-2">Code:</h6>
+                                                <div class="highlight card bg-dark text-white border">
+                                                    <pre class="ms-2" tabindex="0" class="chroma">
+                                                        <code class="language-js" data-lang="js"><span class="line">
+// latihan 7
+<span class="text-primary">&lt;button type="button" onclick="toast_counter()" class="btn btn-primary"&gt;&lt;i class="fa-solid fa-arrow-pointer"&gt;&lt;/i&gt; Click Me!!&lt;/button&gt;</span>
+
+let click_counter = 0;
+
+function toast_counter() {
+    click_counter++;
+    Swal.fire({
+        toast: true,
+        position: 'top-end',
+        showConfirmButton: false,
+        timer: 1500,
+        timerProgressBar: true,
+        icon: 'success',
+        title: `Clicked ${click_counter} times!`
+    })
+}</code></pre>
+                                                </div>
+
+                                                <h6 class="mt-2">Output: </h6>
+                                                <button type="button" onclick="toast_counter()" class="btn btn-primary"><i class="fa-solid fa-arrow-pointer"></i> Click Me!!</button>                                                
+                                            </div>
+                                            <div id="pertemuan-2-p">
+                                                <h2 class="mt-4">DOM (Document Object Model)</h2>
+                                            </div>
+                                            <div id="pertemuan-2-q" class="card p-4 mb-3">
+                                                <h2 class="">Latihan 8</h2>
+                                                <h6 class="mt-2">Code:</h6>
+                                                <div class="highlight card bg-dark text-white border">
+                                                    <pre class="ms-2" tabindex="0" class="chroma">
+                                                        <code class="language-js" data-lang="js"><span class="line">
+<span class="text-primary">
+&lt;label for="exampleColorInput" class="form-label"&gt;Pilih Warna&lt;/label&gt;
+&lt;input type="color" onchange="change_color(this.value)" class="form-control form-control-color" id="exampleColorInput" value="#563d7c" title="Pilih Warna"&gt;
+
+&lt;div id="hover-box"  onmouseover="hoverIn()" onmouseout="hoverOut()" class="card p-4 mt-3 d-flex align-items-center text-center"&gt;
+    Hover Me!!
+&lt;/div&gt;
+</span>
+function change_color(value) { 
+    document.querySelector('#hover-box').style.background = value;
+}
+
+let bg_cycle = ['bg-primary', 'bg-secondary', 'bg-danger', 'bg-success', 'bg-info'];
+let bg_index = 0;
+function bg_class() { 
+    return bg_cycle[bg_index%bg_cycle.length]
+}
+
+function hoverIn() { 
+    document.querySelector('#hover-box').classList.add(bg_class());
+}
+
+function hoverOut() { 
+    document.querySelector('#hover-box').classList.remove(bg_class());
+    bg_index++;
+}</code></pre>
+                                                </div>
+
+                                                <h6 class="mt-2">Output: </h6>
+                                                <label for="exampleColorInput" class="form-label">Pilih Warna</label>
+                                                <input type="color" onchange="change_color(this.value)" class="form-control form-control-color" id="exampleColorInput" value="#563d7c" title="Pilih Warna">
+
+                                                <div id="hover-box"  onmouseover="hoverIn()" onmouseout="hoverOut()" class="card p-4 mt-3 d-flex align-items-center text-center">
+                                                    Hover Me!!
+                                                </div>
+
+                                            </div>
+                                            <div id="pertemuan-2-r">
+                                                <h2 class="mt-4">Storage</h2>
+                                            </div>
+                                            <div id="pertemuan-2-s" class="card p-4 mb-3">
+                                                <h2 class="">Latihan 9</h2>
+                                                <h6 class="mt-2">Code:</h6>
+                                                <div class="highlight card bg-dark text-white border">
+                                                    <pre class="ms-2" tabindex="0" class="chroma">
+                                                        <code class="language-js" data-lang="js"><span class="line">
+<span class="text-primary">
+&lt;div class="input-group mb-3"&gt;
+    &lt;input id="todo_input" type="text" class="form-control" placeholder="Task To Do" aria-label="Task To Do" aria-describedby="button-add" required&gt;
+    &lt;button class="btn btn-outline-secondary" type="button" id="button-add" onclick="addTodo()"&gt;Add&lt;/button&gt;
+&lt;/div&gt;
+&lt;table id="todo_table" class="table table-striped"&gt;                                                    
+&lt;/table&gt;
+</span>
+// latihan 9
+function getTodo() {
+    let stored = localStorage.getItem("todo_list");
+    try {
+        return JSON.parse(stored);
+    } catch (err) {
+        console.log('Todo List Empty');
+        return [];
+    }
+}
+
+function init_list() {  
+    var storedTodo = getTodo();
+    let element='';
+    storedTodo.forEach((item, index) => {
+        element += 
+            `&lt;tr&gt;
+                &lt;td class="align-middle"&gt;${item}&lt;/td&gt;
+                &lt;td align="middle"&gt;&lt;button type="button" onclick="deleteTodo(${index})" class="btn btn-danger"&gt;&lt;i class="fa-solid fa-trash-can"&gt;&lt;/i&gt;&lt;/button&gt;&lt;/td&gt;
+            &lt;/tr&gt;`;
+        });
+    document.getElementById("todo_table").innerHTML = element;
+}
+init_list();
+
+function deleteTodo(index) {  
+    let storedTodo = getTodo();
+    storedTodo.splice(index, 1);
+    console.log(`after delete ${storedTodo}`);
+    localStorage.setItem("todo_list", JSON.stringify(storedTodo));
+    init_list();
+}
+
+function addTodo() {
+    let input_task = document.getElementById("todo_input");
+    if (input_task.value != '') {
+        var storedTodo = getTodo();
+        storedTodo.push(input_task.value);
+        localStorage.setItem("todo_list", JSON.stringify(storedTodo));
+        input_task.value = '';
+        init_list();        
+    }
+}</code></pre>
+                                                </div>
+
+                                                <h6 class="mt-2">Output: </h6>
+                                                <div class="input-group mb-3">
+                                                    <input id="todo_input" type="text" class="form-control" placeholder="Task To Do" aria-label="Task To Do" aria-describedby="button-add" required>
+                                                    <button class="btn btn-outline-secondary" type="button" id="button-add" onclick="addTodo()">Add</button>
+                                                  </div>
+                                                <table id="todo_table" class="table table-striped">                                                    
+                                                </table>
+
+                                            </div>
+                                          </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer-->
+    <footer class="bg-white py-4 mt-auto">
+        <div class="container px-5">
+            <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                <div class="col-auto"><div class="small m-0">Copyright &copy; 2023</div></div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+            target: '#navbar-example1'
+        })
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
