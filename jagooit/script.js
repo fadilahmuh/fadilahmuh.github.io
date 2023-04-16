@@ -443,14 +443,16 @@ function getTodo() {
 function init_list() {  
     var storedTodo = getTodo();
     let element='';
-    storedTodo.forEach((item, index) => {
-        element += 
-            `<tr>
-                <td class="align-middle">${item}</td>
-                <td align="middle"><button type="button" onclick="deleteTodo(${index})" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i></button></td>
-            </tr>`;
-        });
-    document.getElementById("todo_table").innerHTML = element;
+    if (storedTodo != null) {
+        storedTodo.forEach((item, index) => {
+            element += 
+                `<tr>
+                    <td class="align-middle">${item}</td>
+                    <td align="middle"><button type="button" onclick="deleteTodo(${index})" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i></button></td>
+                </tr>`;
+            });
+        document.getElementById("todo_table").innerHTML = element;        
+    }
 }
 init_list();
 
@@ -465,7 +467,11 @@ function addTodo() {
     let input_task = document.getElementById("todo_input");
     if (input_task.value != '') {
         var storedTodo = getTodo();
-        storedTodo.push(input_task.value);
+        if (storedTodo != null) {
+            storedTodo.push(input_task.value);
+        } else {
+            storedTodo = [input_task.value]
+        }
         localStorage.setItem("todo_list", JSON.stringify(storedTodo));
         input_task.value = '';
         init_list();        

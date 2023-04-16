@@ -1169,9 +1169,55 @@ function init_list() {
 init_list();
 
 function deleteTodo(index) {  
+    let storedTodo = getTodo();// latihan 9
+function getTodo() {
+    let stored = localStorage.getItem("todo_list");
+    try {
+        return JSON.parse(stored);
+    } catch (err) {
+        console.log('Todo List Empty');
+        return [];
+    }
+}
+
+function init_list() {  
+    var storedTodo = getTodo();
+    let element='';
+    if (storedTodo != null) {
+        storedTodo.forEach((item, index) => {
+            element += 
+                `&lt;tr&gt;
+                    &lt;td class="align-middle"&gt;${item}&lt;/td&gt;
+                    &lt;td align="middle"&gt;&lt;button type="button" onclick="deleteTodo(${index})" class="btn btn-danger"&gt;&lt;i class="fa-solid fa-trash-can"&gt;&lt;/i&gt;&lt;/button&gt;&lt;/td&gt;
+                &lt;/tr&gt;`;
+            });
+        document.getElementById("todo_table").innerHTML = element;        
+    }
+}
+init_list();
+
+function deleteTodo(index) {  
     let storedTodo = getTodo();
     storedTodo.splice(index, 1);
-    console.log(`after delete ${storedTodo}`);
+    localStorage.setItem("todo_list", JSON.stringify(storedTodo));
+    init_list();
+}
+
+function addTodo() {
+    let input_task = document.getElementById("todo_input");
+    if (input_task.value != '') {
+        var storedTodo = getTodo();
+        if (storedTodo != null) {
+            storedTodo.push(input_task.value);
+        } else {
+            storedTodo = [input_task.value]
+        }
+        localStorage.setItem("todo_list", JSON.stringify(storedTodo));
+        input_task.value = '';
+        init_list();        
+    }
+}
+    storedTodo.splice(index, 1);
     localStorage.setItem("todo_list", JSON.stringify(storedTodo));
     init_list();
 }
