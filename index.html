@@ -4,30 +4,10 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + Vue + TS</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap">
+    <title>fadilahmuh.github.io</title>
   </head>
-  <body class="bg-background h-screen w-screen">
-    <script>
-      document.documentElement.classList.toggle(
-        'dark',
-        localStorage.theme === 'dark' ||
-          (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches),
-      );
-      // Whenever the user explicitly chooses light mode
-      localStorage.theme = 'light';
-      // Whenever the user explicitly chooses dark mode
-      localStorage.theme = 'dark';
-      // Whenever the user explicitly chooses to respect the OS preference
-      localStorage.removeItem('theme');
-    </script>
-    <div id="app"></div>
-    <noscript>
-      <strong
-        >We're sorry but this app doesn't work properly without JavaScript enabled. Please enable it
-        to continue.</strong
-      >
-    </noscript>
-    <script type="module" src="/src/main.ts"></script>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
