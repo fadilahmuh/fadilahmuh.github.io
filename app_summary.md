@@ -2,34 +2,48 @@
 
 Some simple single page react app for my portofolio
 
-### Library / component that used:
-
+### Library / component / rules that used:
 - React (Javascript)
 - Template/Component using reactbits.dev (base: tailwind + shadcn)
+- for every component i mention just install it using 
+    ```npx shadcn@latest add [component-name]```
+- make the theme deep dark, mostly black
 
-### Section
+## Follow this rule for each section
 
-- Hero (my photo and some text introduction)
-- Tech stack
-- Experiences
-- Project showcase
-- Contact
+make this text animation @react-bits/SplitText-TS-TW as a default For title section
 
+### Hero
 
-Hero
-https://reactbits.dev/backgrounds/grid-scan
-https://reactbits.dev/components/profile-card
+- use this component @react-bits/DotGrid-TS-TW for background
+- use this component @react-bits/ProfileCard-TS-TW in front of the background and use @profile_picture.jpg for the image
+- the introduction text is "Hello im Fannie Muhammad, im [Fullstack Developer, DevOps Engineer]" add @react-bits/TextType-TS-TW to roll my role
 
-Tech stack
-https://reactbits.dev/animations/logo-loop
+### Tech stack (or change this title to really fit in with the content)
 
-Experiences
-https://reactbits.dev/components/scroll-stack
+- use this component @react-bits/DomeGallery-TS-TW to list my tech stack that i user, put the tech svgs logo with single tone color (white), this the tech stack i use ["HTML5","CSS3","JavaScript","TypeScript","Python","Bootstrap","Tailwind CSS","Laravel","Vue.js","React","Next.js","Vite","GitHub","GitLab","Postman","Katalon Studio","Proxmox","MySQL","PostgreSQL","Google Colab","PyTorch","TensorFlow", "n8n"]
 
-Project
-https://reactbits.dev/components/card-swap
-https://reactbits.dev/components/infinite-scroll
+### Experiences
+- use this component @react-bits/ScrollStack-TS-TW , make 4 stack with content inside
+    1. Full-Stack Web Developer
+        - Freelance
+        - Consulted with clients to design custom web solutions. Built CMS applications using Laravel, integrated secure payment systems, and developed RESTful APIs. Optimized performance, deployed apps on cloud services, and ensured smooth functionality.
+    2. Quality Assurance
+        - PT. Ihsan Solusi Informatika (2024)
+        - Performed manual and automated testing to ensure software quality. Identified, analyzed, and documented defects while maintaining test cases based on functional specifications.
+    3. Full-Stack Web Developer & DevOps Engineer
+        - In House Developer National Institute of Technology (2022-present)
+        - Handles the full lifecycle of web projects—from architecture and development to deployment and infrastructure management—ensuring reliability and efficiency across platforms.
+    4. Ads Specialist
+        - Freelance
+        - Managed end-to-end campaigns across Meta, TikTok, and Google Ads—including audience targeting, keyword research, and budget allocation—while technically deploying Google Tag tracking across various websites.
 
-contact
-https://reactbits.dev/components/dock
-https://reactbits.dev/components/chroma-grid
+### Project Showcase
+- use this component @react-bits/CardSwap-TS-TW, just make it 3 with placeholder image 1080p
+
+### contact
+- use this component @react-bits/ChromaGrid-TS-TW, make it with logo of any social media i use
+    - email, fadilahmuhammad800@gmail.com
+    - instagram, @fadilahmuh
+    - discord, @alm8tyy
+    - telegram, @fadilahmuh
