@@ -5,26 +5,24 @@ Some simple single page react app for my portofolio
 ### Library / component / rules that used:
 - React (Javascript)
 - Template/Component using reactbits.dev (base: tailwind + shadcn)
-- for every component i mention just install it using 
-    ```npx shadcn@latest add [component-name]```
 - make the theme deep dark, mostly black
 
 ## Follow this rule for each section
 
-make this text animation @react-bits/SplitText-TS-TW as a default For title section
+make this text animation <SplitText/> as a default For title section
 
 ### Hero
 
-- use this component @react-bits/DotGrid-TS-TW for background
-- use this component @react-bits/ProfileCard-TS-TW in front of the background and use @profile_picture.jpg for the image
-- the introduction text is "Hello im Fannie Muhammad, im [Fullstack Developer, DevOps Engineer]" add @react-bits/TextType-TS-TW to roll my role
+- use this component <DotGrid/> for background
+- use this component <ProfileCard/> in front of the background and use @profile_picture.jpg for the image
+- the introduction text is "Hello im Fannie Muhammad, im [Fullstack Developer, DevOps Engineer]" add <TextType/> to roll my role
 
 ### Tech stack (or change this title to really fit in with the content)
 
-- use this component @react-bits/DomeGallery-TS-TW to list my tech stack that i user, put the tech svgs logo with single tone color (white), this the tech stack i use ["HTML5","CSS3","JavaScript","TypeScript","Python","Bootstrap","Tailwind CSS","Laravel","Vue.js","React","Next.js","Vite","GitHub","GitLab","Postman","Katalon Studio","Proxmox","MySQL","PostgreSQL","Google Colab","PyTorch","TensorFlow", "n8n"]
+- use this component <DomeGallery/> to list my tech stack that i user, put the tech svgs logo with single tone color (white), this the tech stack i use ["HTML5","CSS3","JavaScript","TypeScript","Python","Bootstrap","Tailwind CSS","Laravel","Vue.js","React","Next.js","Vite","GitHub","GitLab","Postman","Katalon Studio","Proxmox","MySQL","PostgreSQL","Google Colab","PyTorch","TensorFlow", "n8n"]
 
 ### Experiences
-- use this component @react-bits/ScrollStack-TS-TW , make 4 stack with content inside
+- use this component <ScrollStack/> , make 4 stack with content inside
     1. Full-Stack Web Developer
         - Freelance
         - Consulted with clients to design custom web solutions. Built CMS applications using Laravel, integrated secure payment systems, and developed RESTful APIs. Optimized performance, deployed apps on cloud services, and ensured smooth functionality.
@@ -39,10 +37,10 @@ make this text animation @react-bits/SplitText-TS-TW as a default For title sect
         - Managed end-to-end campaigns across Meta, TikTok, and Google Ads—including audience targeting, keyword research, and budget allocation—while technically deploying Google Tag tracking across various websites.
 
 ### Project Showcase
-- use this component @react-bits/CardSwap-TS-TW, just make it 3 with placeholder image 1080p
+- use this component <CardSwap/>, just make it 3 with placeholder image 1080p
 
 ### contact
-- use this component @react-bits/ChromaGrid-TS-TW, make it with logo of any social media i use
+- use this component <ChromaGrid/>, make it with logo of any social media i use
     - email, fadilahmuhammad800@gmail.com
     - instagram, @fadilahmuh
     - discord, @alm8tyy
