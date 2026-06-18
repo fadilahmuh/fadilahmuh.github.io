@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useCallback, useMemo, useState } from 'react';
+import React, { useEffect, useRef, useCallback, useMemo } from 'react';
 
 const DEFAULT_INNER_GRADIENT = 'linear-gradient(145deg,#60496e8c 0%,#71C4FF44 100%)';
 
@@ -74,7 +74,7 @@ const ProfileCardComponent: React.FC<ProfileCardProps> = ({
   mobileTiltSensitivity = 5,
   miniAvatarUrl,
   name = 'Javi A. Torres',
-  title = 'Software Engineer',
+  title = '',
   handle = 'javicodes',
   status = 'Online',
   contactText = 'Contact',
