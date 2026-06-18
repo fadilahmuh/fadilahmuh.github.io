@@ -94,8 +94,10 @@
     @apply font-sans overflow-x-hidden;
     scroll-behavior: smooth;
   }
-  section[id]:not(#hero) {
-    scroll-margin-top: 5rem;
+  @media (min-width: 768px) {
+    section[id]:not(#hero) {
+      scroll-margin-top: 5rem;
+    }
   }
 }
 

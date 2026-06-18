@@ -2,43 +2,43 @@ import DomeGallery from '@/components/DomeGallery'
 import SplitText from '@/components/SplitText'
 
 const techStack = [
-  "HTML5", "CSS3", "JavaScript", "TypeScript", "Python",
-  "Bootstrap", "Tailwind CSS", "Laravel", "Vue.js", "React",
-  "Next.js", "Vite", "GitHub", "GitLab", "Postman",
-  "Katalon Studio", "Proxmox", "MySQL", "PostgreSQL",
-  "Google Colab", "PyTorch", "TensorFlow", "n8n"
+  { name: "HTML5", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg", filter: "none" as const },
+  { name: "CSS3", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg", filter: "none" as const },
+  { name: "JavaScript", logo: "https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/javascript/default.svg", filter: "none" as const },
+  { name: "TypeScript", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg", filter: "none" as const },
+  { name: "Python", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg", filter: "none" as const },
+  { name: "Bootstrap", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg", filter: "none" as const },
+  { name: "Tailwind CSS", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg", filter: "none" as const },
+  { name: "Laravel", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg", filter: "none" as const },
+  { name: "Vue.js", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg", filter: "none" as const },
+  { name: "React", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg", filter: "none" as const },
+  { name: "Next.js", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg", filter: "none" as const },
+  { name: "Vite", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vitejs/vitejs-original.svg", filter: "none" as const },
+  { name: "GitHub", logo: "https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/github/dark.svg", filter: "none" as const },
+  { name: "GitLab", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg", filter: "none" as const },
+  { name: "Postman", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg", filter: "none" as const },
+  { name: "Katalon Studio", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Katalon-logo-vector.svg/960px-Katalon-logo-vector.svg.png?_=20230927024859", filter: "white" as const },
+  { name: "Proxmox", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg", filter: "none" as const },
+  { name: "MySQL", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg", filter: "none" as const },
+  { name: "PostgreSQL", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg", filter: "none" as const },
+  { name: "PyTorch", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg", filter: "none" as const },
+  { name: "TensorFlow", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg", filter: "none" as const },
+  { name: "n8n", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg", filter: "none" as const },
+  { name: "debian", logo: "https://thesvg.org/icons/debian/default.svg", filter: "none" as const },
+  { name: "SonarQube", logo: "https://thesvg.org/icons/sonarqube/default.svg", filter: "none" as const },
+  { name: "zapproxy", logo: "https://thesvg.org/icons/zap/default.svg", filter: "white" as const },
+  { name: "nginx proxy", logo: "https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/nginx-proxy-manager/default.svg", filter: "white" as const },
 ]
 
-// Simple SVG icons as data URIs (white, single tone)
-const techLogos: Record<string, string> = {
-  "HTML5": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
-  "CSS3": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
-  "JavaScript": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
-  "TypeScript": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
-  "Python": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
-  "Bootstrap": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg",
-  "Tailwind CSS": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
-  "Laravel": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg",
-  "Vue.js": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg",
-  "React": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-  "Next.js": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
-  "Vite": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vitejs/vitejs-original.svg",
-  "GitHub": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
-  "GitLab": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg",
-  "Postman": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg",
-  "Katalon Studio": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/selenium/selenium-original.svg",
-  "Proxmox": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg",
-  "MySQL": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
-  "PostgreSQL": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
-  "Google Colab": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg",
-  "PyTorch": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg",
-  "TensorFlow": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg",
-  "n8n": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+const filterMap: Record<string, string> = {
+  white: 'grayscale(1) brightness(0) invert(1)',
+  grayscale: 'grayscale(1)',
 }
 
 const galleryImages = techStack.map(tech => ({
-  src: techLogos[tech] || `https://via.placeholder.com/100x100/111111/ffffff?text=${encodeURIComponent(tech)}`,
-  alt: tech,
+  src: tech.logo,
+  alt: tech.name,
+  filter: filterMap[tech.filter],
 }))
 
 export default function TechStack() {
@@ -61,11 +61,11 @@ export default function TechStack() {
         />
       </div>
 
-      <div className="h-[400px] md:h-[600px]">
+      <div className="h-[280px] md:h-[600px]">
         <DomeGallery
           images={galleryImages}
           fit={0.7}
-          grayscale={true}
+          grayscale={false}
           dragSensitivity={20}
           maxVerticalRotationDeg={30}
           overlayBlurColor="#020202"

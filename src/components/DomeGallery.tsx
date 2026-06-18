@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useRef, useCallback } from 'react';
 import { useGesture } from '@use-gesture/react';
 
-type ImageItem = string | { src: string; alt?: string };
+type ImageItem = string | { src: string; alt?: string; filter?: string };
 
 type DomeGalleryProps = {
   images?: ImageItem[];
@@ -26,6 +26,7 @@ type DomeGalleryProps = {
 type ItemDef = {
   src: string;
   alt: string;
+  filter?: string;
   x: number;
   y: number;
   sizeX: number;
@@ -104,9 +105,9 @@ function buildItems(pool: ImageItem[], seg: number): ItemDef[] {
 
   const normalizedImages = pool.map(image => {
     if (typeof image === 'string') {
-      return { src: image, alt: '' };
+      return { src: image, alt: '', filter: undefined as string | undefined };
     }
-    return { src: image.src || '', alt: image.alt || '' };
+    return { src: image.src || '', alt: image.alt || '', filter: image.filter };
   });
 
   const usedImages = Array.from({ length: totalSlots }, (_, i) => normalizedImages[i % normalizedImages.length]);
@@ -127,7 +128,8 @@ function buildItems(pool: ImageItem[], seg: number): ItemDef[] {
   return coords.map((c, i) => ({
     ...c,
     src: usedImages[i].src,
-    alt: usedImages[i].alt
+    alt: usedImages[i].alt,
+    filter: usedImages[i].filter
   }));
 }
 
@@ -854,7 +856,7 @@ export default function DomeGallery({
                       className="w-full h-full object-cover pointer-events-none"
                       style={{
                         backfaceVisibility: 'hidden',
-                        filter: `var(--image-filter, ${grayscale ? 'grayscale(1)' : 'none'})`
+                        filter: it.filter ?? `var(--image-filter, ${grayscale ? 'grayscale(1)' : 'none'})`
                       }}
                     />
                   </div>

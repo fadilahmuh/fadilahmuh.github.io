@@ -21,28 +21,31 @@ export default function Hero() {
         />
       </div>
 
-      {/* Content — side by side */}
-      <div className="relative z-10 flex flex-col md:flex-row items-center gap-6 md:gap-12 px-4 pt-20 md:pt-0">
-        <ProfileCard
-          avatarUrl={profilePicture}
-          name="Fannie Muhammad"
-          // title="Fullstack Developer & DevOps Engineer"
-          handle="fadilahmuh"
-          status="Online"
-          contactText="Contact Me"
-          iconUrl={patterURL}
-          showUserInfo={false}
-          enableTilt={true}
-          enableMobileTilt={true}
-          behindGlowEnabled={true}
-          behindGlowColor="rgba(125, 190, 255, 0.67)"
-          innerGradient="linear-gradient(145deg,#60496e8c 0%,#71C4FF44 100%)"
-        />
+      {/* Content — stacked on mobile, side by side on desktop */}
+      <div className="relative z-10 flex flex-col md:flex-row items-center gap-2 md:gap-12 px-4">
+        {/* ProfileCard — scale down on mobile to fit */}
+        <div className="flex-shrink-0 scale-[0.65] md:scale-100 origin-center -my-10 md:my-0">
+          <ProfileCard
+            avatarUrl={profilePicture}
+            name="Fadilah Muhammad"
+            // title="Fullstack Developer & DevOps Engineer"
+            handle="fadilahmuh"
+            status="Online"
+            contactText="Contact Me"
+            iconUrl={patterURL}
+            showUserInfo={false}
+            enableTilt={true}
+            enableMobileTilt={true}
+            behindGlowEnabled={true}
+            behindGlowColor="rgba(125, 190, 255, 0.67)"
+            innerGradient="linear-gradient(145deg,#60496e8c 0%,#71C4FF44 100%)"
+          />
+        </div>
 
         <div className="text-center md:text-left">
           <SplitText
-            text="Hello, I'm Fannie Muhammad"
-            className="text-4xl md:text-5xl font-bold text-white"
+            text="Hello, I'm Fadilah Muhammad"
+            className="text-3xl md:text-5xl font-bold text-white"
             delay={50}
             duration={1.25}
             ease="power3.out"
@@ -55,7 +58,7 @@ export default function Hero() {
             tag="h1"
           />
 
-          <div className="mt-4 text-xl text-gray-300 flex items-center justify-center gap-2">
+          <div className="mt-2 md:mt-4 text-lg md:text-xl text-gray-300 flex items-center justify-center gap-2">
             <span>I&apos;m</span>
             <TextType
               text={["Fullstack Developer", "DevOps Engineer"]}

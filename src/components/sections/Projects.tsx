@@ -32,7 +32,7 @@ const projects = [
 export default function Projects() {
   return (
     <section id="projects" className="relative py-20 px-4 md:px-8 overflow-hidden">
-      <div className="text-center mb-12">
+      <div className="text-center mb-12 relative z-10">
         <SplitText
           text="Projects"
           className="text-4xl md:text-5xl font-bold text-white"
@@ -49,9 +49,9 @@ export default function Projects() {
         />
       </div>
 
-      <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-6 md:gap-12">
+      <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-6 md:gap-16">
         {/* Text — left side */}
-        <div className="w-full md:w-1/2 text-center md:text-left order-2 md:order-1 px-2">
+        <div className="w-full md:w-1/2 text-center md:text-left px-2 relative z-10">
           <SplitText
           text="Punchy, concise, and looks great if you want a clean, modern UI feel."
           className="text-2xl md:text-4xl font-medium text-white leading-tight"
@@ -69,14 +69,15 @@ export default function Projects() {
         </div>
 
         {/* CardSwap — right side */}
-        <div className="relative w-full md:w-1/2 h-[300px] md:h-[400px] flex items-center justify-center order-1 md:order-2">
+        <div className="relative w-full md:w-1/2 h-[300px] md:h-[400px] overflow-hidden md:overflow-visible">
           <CardSwap
-            width="min(400px, 90vw)"
-            height="225px"
-            cardDistance={20}
-            verticalDistance={20}
+            width="min(380px, 80vw)"
+            height="260px"
+            cardDistance={25}
+            verticalDistance={25}
             delay={3000}
             pauseOnHover={true}
+            className="!bottom-[5%] !right-1/2 !translate-x-1/2 !top-auto max-[768px]:!translate-x-1/2 max-[768px]:!scale-100 max-[480px]:!translate-x-1/2 max-[480px]:!scale-100"
           >
             {projects.map((project, i) => (
               <Card key={i} className="overflow-hidden">

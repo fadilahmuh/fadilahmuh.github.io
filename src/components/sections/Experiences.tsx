@@ -1,5 +1,9 @@
 import TimelineExperiences from '@/components/TimelineExperiences'
 import SplitText from '@/components/SplitText'
+import fsImg from '@/assets/fullstack.png'
+import qaImg from '@/assets/qa.png'
+import devopsImg from '@/assets/devops.png'
+import adsImg from '@/assets/ads.png'
 
 const experiences = [
   {
@@ -7,34 +11,34 @@ const experiences = [
     company: "Freelance",
     description:
       "Consulted with clients to design custom web solutions. Built CMS applications using Laravel, integrated secure payment systems, and developed RESTful APIs. Optimized performance, deployed apps on cloud services, and ensured smooth functionality.",
-    image: "https://picsum.photos/600/400?random=1",
+    image: fsImg,
   },
   {
     role: "Quality Assurance",
     company: "PT. Ihsan Solusi Informatika (2024)",
     description:
       "Performed manual and automated testing to ensure software quality. Identified, analyzed, and documented defects while maintaining test cases based on functional specifications.",
-    image: "https://picsum.photos/600/400?random=2",
+    image: qaImg,
   },
   {
     role: "Full-Stack Web Developer & DevOps Engineer",
     company: "In House Developer — National Institute of Technology (2022–present)",
     description:
       "Handles the full lifecycle of web projects — from architecture and development to deployment and infrastructure management — ensuring reliability and efficiency across platforms.",
-    image: "https://picsum.photos/600/400?random=3",
+    image: devopsImg,
   },
   {
     role: "Ads Specialist",
     company: "Freelance",
     description:
       "Managed end-to-end campaigns across Meta, TikTok, and Google Ads — including audience targeting, keyword research, and budget allocation — while technically deploying Google Tag tracking across various websites.",
-    image: "https://picsum.photos/600/400?random=4",
+    image: adsImg,
   },
 ]
 
 export default function Experiences() {
   return (
-    <section id="experiences" className="relative py-20 px-4 md:px-8">
+    <section id="experiences" className="relative py-20 px-4 md:px-8 overflow-x-hidden">
       <div className="text-center mb-16">
         <SplitText
           text="Experiences"

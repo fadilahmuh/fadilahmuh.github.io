@@ -95,7 +95,7 @@ export default function TimelineExperiences({ items }: TimelineExperiencesProps)
   }, [])
 
   return (
-    <div ref={containerRef} className="relative max-w-5xl mx-auto">
+    <div ref={containerRef} className="relative max-w-5xl mx-auto overflow-hidden">
       {/* Vertical line — left on mobile, center on desktop */}
       <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-px md:-translate-x-1/2 bg-white/10">
         <div

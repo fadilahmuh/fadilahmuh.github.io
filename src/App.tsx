@@ -16,7 +16,7 @@ const navItems = [
 function App() {
   return (
     <div className="min-h-screen bg-background text-foreground">
-      <div className="fixed top-0 left-0 right-0 z-50 flex justify-center py-4 bg-background/60 backdrop-blur-md overflow-hidden">
+      <div className="fixed top-0 left-0 right-0 z-50 hidden md:flex justify-center py-4 bg-background/60 backdrop-blur-md overflow-hidden">
         <GooeyNav
           items={navItems}
           animationTime={600}
