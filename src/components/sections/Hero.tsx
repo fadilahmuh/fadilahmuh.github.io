@@ -61,7 +61,7 @@ export default function Hero() {
           <div className="mt-2 md:mt-4 text-lg md:text-xl text-gray-300 flex items-center justify-center gap-2">
             <span>I&apos;m</span>
             <TextType
-              text={["Fullstack Developer", "DevOps Engineer"]}
+              text={["Fullstack Developer", "DevOps Engineer", "Ads Specialist"]}
               typingSpeed={75}
               deletingSpeed={50}
               pauseDuration={2000}

@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useState } from 'react';
-import { Link, animateScroll } from 'react-scroll';
+import { Link } from 'react-scroll';
 
 interface GooeyNavItem {
   label: string;
