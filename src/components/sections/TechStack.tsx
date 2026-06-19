@@ -27,7 +27,7 @@ const techStack = [
   { name: "debian", logo: "https://thesvg.org/icons/debian/default.svg", filter: "none" as const },
   { name: "SonarQube", logo: "https://thesvg.org/icons/sonarqube/default.svg", filter: "none" as const },
   { name: "zapproxy", logo: "https://thesvg.org/icons/zap/default.svg", filter: "white" as const },
-  { name: "nginx proxy", logo: "https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/nginx-proxy-manager/default.svg", filter: "white" as const },
+  { name: "nginx proxy", logo: "https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/nginx-proxy-manager/default.svg", filter: "none" as const },
 ]
 
 const filterMap: Record<string, string> = {
@@ -61,13 +61,13 @@ export default function TechStack() {
         />
       </div>
 
-      <div className="h-[280px] md:h-[600px]">
+      <div className="h-[400px] md:h-[600px]">
         <DomeGallery
           images={galleryImages}
           fit={0.7}
           grayscale={false}
           dragSensitivity={20}
-          maxVerticalRotationDeg={30}
+          maxVerticalRotationDeg={3}
           overlayBlurColor="#020202"
         />
       </div>
